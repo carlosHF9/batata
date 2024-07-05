@@ -1,77 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Recipe page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+<style>
+    body {
+        background-color: #5D458F;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #5D458F;
+        font-family:arial,helvetica,sans-serif;
+        color: white;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .card {
+        background-color: #73A93A;
+        border-radius: 20px;
+        max-width: 300px;
+        text-align: left;
+    }
+    .card-picture {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+    @media (min-width: 600px) {
+        .card {
+            display: flex;
+            flex-direction: row-reverse;
+            max-width: 600px;
+        }
+
+        .card-picture {
+            border-radius: 0px 20px 20px 0px;    
+        }
+
+        
+    }
+
+    .container-title {
+        padding: 0;
+        margin: 0;
+    }
+    
+
+
+    .card-info {
+        padding: 1em;
+        
+        
+    }
+    .card-title {
+        font-weight: bold;
+        
+    }
+
+    .event-description {
+        max-width: 600px;
+    }
+
+    .container-description {
+        margin-top: 2em;
+    }
+
+    .logo-container {
+        background-color:#73A93A;
+        padding: 1em 4em;
+        border-radius: 20px;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        max-width: 600px;
+    }
+
+</style>
 <body>
-
-  Simple Omelette Recipe
-
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
-
-  Preparation time
-
-  Total: Approximately 10 minutes
-  Preparation: 5 minutes
-  Cooking: 5 minutes
-
-  Ingredients
-
-  2-3 large eggs
-  Salt, to taste
-  Pepper, to taste
-  1 tablespoon of butter or oil
-  Optional fillings: cheese, diced vegetables, cooked meats, herbs
-
-  Instructions
-
-  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.
-
-  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
-
-  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.
-
-  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.
-
-  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.
-
-  Enjoy: Serve hot, with additional salt and pepper if needed.
-
-  Nutrition
-
-  The table below shows nutritional values per serving without the additional fillings.
-
-  Calories
-  277kcal
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="container">
+        <div class="logo-container">
+            <img data-assetid="622061" src="https://image.sactacaruna.com.br/lib/fe3b117371640478741670/m/1/54a1cd93-ac2a-4d28-bf07-651a9d4b98eb.png" alt="Logo Tacaruna" height="35" width="154" style="display: block; padding: 0px; text-align: center; height: 35px; width: 154px;">
+        </div>
+        <div class="container-description">
+                <h3 class="container-title">UNIVERSO MÁGICO TACARUNA</h3>
+                <p class="event-description">O evento conta com uma Escola de Mágica com oficinas de mágica todos os dias, a partir das 14h, com sessão de hora em hora, e 20 vagas por sessão. A ação foi pensada para crianças a partir de 5 anos. No espaço estão montados cenários de ilusionismo e truques de fotografia, funcionando todos os dias, a partir das 14h. </p>
+        </div>
+        <div class="card">
+            <img class="card-picture" src="https://image.sactacaruna.com.br/lib/fe3b117371640478741670/m/1/97cfa72d-4447-4f08-86ba-732c0680082b.png">
+            <div class="card-info">
+                <span class="card-title">UNIVERSO MÁGICO TACARUNA</span>
+                <p class="description">O evento conta com uma Escola de Mágica com oficinas de mágica todos os dias, a partir das 14h, com sessão de hora em hora, e 20 vagas por sessão.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-picture" src="https://image.sactacaruna.com.br/lib/fe3b117371640478741670/m/1/97cfa72d-4447-4f08-86ba-732c0680082b.png">
+            <div class="card-info">
+                <span class="card-title">UNIVERSO MÁGICO TACARUNA</span>
+                <p class="description">O evento conta com uma Escola de Mágica com oficinas de mágica todos os dias, a partir das 14h, com sessão de hora em hora, e 20 vagas por sessão.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
